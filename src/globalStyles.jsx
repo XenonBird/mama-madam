@@ -23,6 +23,12 @@ const S_ = StyleSheet.create({
     backgroundColor: colors.white,
     width: '100%',
   },
+  scrollContainer: {
+    flex: 1,
+    padding: 20,
+    width: '100%',
+    position: 'relative',
+  },
   largeText: {
     fontSize: 30,
     fontWeight: 'bold',

@@ -56,12 +56,20 @@ const LevelButton = ({
         style={[
           styles.levelBox,
           {
-            opacity: desabled ? 0.2 : 1,
+            // opacity: desabled ? 0.2 : 1,
+            backgroundColor: desabled ? colors.lightGray : colors.primary,
+            borderColor: desabled ? colors.gray : colors.black,
             borderBottomWidth: borderAnim,
             position: 'relative',
           },
         ]}>
-        <Text style={styles.levelBoxText}>{text}</Text>
+        <Text
+          style={[
+            styles.levelBoxText,
+            {color: desabled ? colors.gray : colors.black},
+          ]}>
+          {text}
+        </Text>
         {pointing && (
           <Animated.Image
             source={require('../asset/images/down_finger.png')}
@@ -82,9 +90,8 @@ const LevelButton = ({
 const styles = StyleSheet.create({
   levelBox: {
     backgroundColor: colors.primary,
-    borderRadius: 20,
+    borderRadius: 99,
     borderWidth: 2,
-    borderBottomWidth: 8,
     borderColor: colors.black,
     width: 80,
     height: 80,
