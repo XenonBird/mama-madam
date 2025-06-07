@@ -1,10 +1,32 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Image} from 'react-native';
+import {View, Text} from 'react-native';
 import {colors} from '../globalStyles';
-import ProfileScreen from '../screens/ProfileScreen';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-import ExporeSreen from '../screens/ExploreScreen';
 import HomeScreen from '../screens/HomeScreen';
+
+const ExploreScreen = () => (
+  <View
+    style={{
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: '#f2f2f2',
+    }}>
+    <Text style={{fontSize: 20, color: '#333'}}>Explore Screen</Text>
+  </View>
+);
+
+const ProfileScreen = () => (
+  <View
+    style={{
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: '#f2f2f2',
+    }}>
+    <Text style={{fontSize: 20, color: '#333'}}>Profile Screen</Text>
+  </View>
+);
 
 const Tab = createBottomTabNavigator();
 
@@ -46,7 +68,7 @@ const MainScreenTabs = () => {
       />
       <Tab.Screen
         name="Explore"
-        component={ExporeSreen}
+        component={ExploreScreen}
         options={{
           tabBarIcon: ({color}) => (
             <Icon

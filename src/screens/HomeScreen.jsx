@@ -1,20 +1,35 @@
-// /src/screens/HomeScreen.jsx
-import {StatusBar} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
-import S_, {colors} from '../globalStyles';
-import RoadMap from '../components/RoadMap';
-import SubjectStatusBar from '../components/SunjectsStatusBar';
+import React from 'react';
+import {StyleSheet, SafeAreaView, ScrollView} from 'react-native';
+import Header from '../components/Header';
+import SubjectCardsRow from '../components/SubjectCardsRow';
+import {CurrentLesson} from '../components/CurrentLesson';
+import {LevelsGrid} from '../components/LevelsGrid';
 
+// Main App Component
 const HomeScreen = ({navigation}) => {
   return (
-    <SafeAreaView style={[S_.container]}>
-      <StatusBar barStyle={'dark-content'} />
-
-      <SubjectStatusBar onSelect={id => console.log('Clicked:', id)} />
-
-      <RoadMap navigation={navigation} />
+    <SafeAreaView style={styles.container}>
+      <ScrollView
+        style={styles.scrollView}
+        showsVerticalScrollIndicator={false}>
+        <Header />
+        <SubjectCardsRow />
+        <CurrentLesson />
+        <LevelsGrid navigation={navigation} />
+      </ScrollView>
     </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create({
+  scrollView: {
+    flex: 1,
+    paddingHorizontal: 20,
+  },
+  container: {
+    flex: 1,
+    backgroundColor: '#F9FAFB',
+  },
+});
 
 export default HomeScreen;

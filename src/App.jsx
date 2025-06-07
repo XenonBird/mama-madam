@@ -4,7 +4,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import WelcomeScreen from './screens/WelcomeScreen';
 import MainScreenTabs from './navigations/MainScreenTabs';
-import LessonScreen from './screens/LessonScreen';
+import QuizScreen from './screens/QuizScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -19,7 +19,7 @@ const App = () => {
           }}>
           <Stack.Screen name="Welcome" component={WelcomeScreen} />
           <Stack.Screen name="Main" component={MainScreenTabs} />
-          <Stack.Screen name="Lesson" component={LessonScreen} />
+          <Stack.Screen name="Quiz" component={QuizScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>

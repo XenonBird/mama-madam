@@ -1,35 +1,40 @@
-// /src/screens/WelcomeScreen.jsx
-import {Image, Pressable, StatusBar, Text, View} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
-import S_, {colors} from '../globalStyles';
+import React from 'react';
+import {View, Text, StyleSheet, Button} from 'react-native';
 
 const WelcomeScreen = ({navigation}) => {
   return (
-    <SafeAreaView style={S_.container}>
-      <StatusBar barStyle={'dark-content'} backgroundColor={colors.white} />
-
-      <View style={[S_.container, {marginBottom: 50}]}>
-        <Image
-          source={require('../asset/images/pear.png')}
-          style={{width: 300, height: 300}}
-          resizeMode="contain"
+    <View style={styles.container}>
+      <Text style={styles.title}>Welcome to MyApp!</Text>
+      <Text style={styles.subtitle}>This is the Welcome Screen.</Text>
+      <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+        <Text style={styles.subtitle}>
+          Click here to start exploring the app.
+        </Text>
+        <Button
+          title="Let's GO!!!"
+          onPress={() => navigation.navigate('Main')}
         />
-
-        <Text style={S_.largeText}>🌟 Welcome 🌟</Text>
-        <Text style={S_.medium}>Learning is now a fun adventure!</Text>
-
-        <Pressable
-          style={S_.buttonPrimary}
-          onPress={() => {
-            navigation.navigate('Main');
-          }}>
-          <Text style={[S_.largeText, S_.shadow, {color: colors.black}]}>
-            Let's start
-          </Text>
-        </Pressable>
       </View>
-    </SafeAreaView>
+    </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    marginBottom: 12,
+  },
+  subtitle: {
+    fontSize: 18,
+    color: '#666',
+  },
+});
 
 export default WelcomeScreen;
