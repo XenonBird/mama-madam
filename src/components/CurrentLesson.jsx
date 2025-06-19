@@ -1,42 +1,61 @@
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import React from 'react';
+import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import {colors} from '../globalStyles';
+import Button from './Button';
 
 // Current Lesson Component
 export const CurrentLesson = () => {
   return (
-    <View style={styles.currentLesson}>
-      <View style={styles.lessonContent}>
-        <Text style={styles.lessonTitle}>Bengali</Text>
-        <Text style={styles.lessonSubtitle}>Lesson 2 &gt; ক - খ অনুশীলন</Text>
+    <Button
+      style={styles.lessonBox}
+      size="large"
+      backgroundColor={colors.white}
+      noShadow={true}>
+      <View>
+        <Text style={styles.label}>Current Lesson</Text>
+        <Text style={styles.lessonTitle}>Alphabet Adventure</Text>
+        <Text style={styles.lessonProgress}>Progress: 3/10</Text>
+        <View
+          style={{flexDirection: 'row', alignItems: 'center', marginTop: 12}}>
+          <Icon name="swap-horiz" size={24} color={colors.purple} />
+          <Text style={{color: colors.purple, fontSize: 16, marginLeft: 8}}>
+            Change Lesson
+          </Text>
+        </View>
       </View>
-      <TouchableOpacity>
-        <Icon name="menu" size={24} color="#000" />
-      </TouchableOpacity>
-    </View>
+
+      <Image
+        source={require('../asset/images/hippo-study.png')}
+        style={{width: 120, height: 120}}
+      />
+    </Button>
   );
 };
 
 const styles = StyleSheet.create({
-  currentLesson: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    backgroundColor: '#C4B5FD',
-    borderRadius: 16,
-    padding: 16,
-    marginBottom: 20,
+  label: {
+    color: colors.purple,
+    fontWeight: 'bold',
+    fontSize: 14,
+    marginBottom: 8,
   },
-  lessonContent: {
-    flex: 1,
+  lessonBox: {
+    borderRadius: 12,
+    padding: 16,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 26,
   },
   lessonTitle: {
-    fontSize: 18,
+    color: colors.black,
+    fontSize: 24,
     fontWeight: 'bold',
-    color: '#000',
-    marginBottom: 4,
   },
-  lessonSubtitle: {
-    fontSize: 14,
-    color: '#374151',
+  lessonProgress: {
+    color: colors.grayDark,
+    fontSize: 18,
+    marginTop: 4,
   },
 });

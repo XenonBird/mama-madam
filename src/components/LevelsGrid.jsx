@@ -1,6 +1,7 @@
 import React from 'react';
 import {Pressable, StyleSheet, Text, View} from 'react-native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import {colors} from '../globalStyles';
 
 // Levels Grid Component
 export const LevelsGrid = ({navigation}) => {
@@ -54,8 +55,12 @@ export const LevelItem = ({
           <FontAwesome
             key={star}
             name={hasStars && star <= starsCount ? 'star' : 'star-o'}
-            size={16}
-            color={hasStars && star <= starsCount ? '#FCD34D' : '#E5E7EB'}
+            size={20}
+            color={
+              hasStars && star <= starsCount
+                ? colors.yellowDark
+                : colors.grayMedium
+            }
             style={styles.starIcon}
           />
         ))}
@@ -64,15 +69,11 @@ export const LevelItem = ({
         style={[
           styles.levelCircle,
           {
-            backgroundColor: isCompleted ? '#FCD34D' : '#D1D5DB',
-            borderColor: isCompleted ? '#F59E0B' : '#9CA3AF',
+            backgroundColor: isCompleted ? colors.yellow : colors.grayLight,
+            borderColor: isCompleted ? colors.yellowDark : colors.grayMedium,
           },
         ]}>
-        <Text
-          style={[
-            styles.levelNumber,
-            {color: isCompleted ? '#1F2937' : '#6B7280'},
-          ]}>
+        <Text style={[styles.levelNumber, {color: colors.grayDark}]}>
           {level}
         </Text>
       </View>
@@ -109,10 +110,10 @@ const styles = StyleSheet.create({
     textShadowRadius: 1,
   },
   levelCircle: {
-    width: 50,
-    height: 50,
-    borderRadius: 25,
-    borderWidth: 2,
+    width: 60,
+    height: 60,
+    borderRadius: 99,
+    borderWidth: 4,
     justifyContent: 'center',
     alignItems: 'center',
     shadowColor: '#000',
@@ -125,8 +126,8 @@ const styles = StyleSheet.create({
     elevation: 3,
   },
   levelNumber: {
-    fontSize: 18,
-    fontWeight: 'bold',
+    fontSize: 24,
+    fontWeight: 800,
     textAlign: 'center',
   },
 });

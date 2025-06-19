@@ -3,6 +3,7 @@ import {View, Text} from 'react-native';
 import {colors} from '../globalStyles';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import HomeScreen from '../screens/HomeScreen';
+import ProfileScreen from '../screens/ProfileScreen';
 
 const ExploreScreen = () => (
   <View
@@ -13,18 +14,6 @@ const ExploreScreen = () => (
       backgroundColor: '#f2f2f2',
     }}>
     <Text style={{fontSize: 20, color: '#333'}}>Explore Screen</Text>
-  </View>
-);
-
-const ProfileScreen = () => (
-  <View
-    style={{
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#f2f2f2',
-    }}>
-    <Text style={{fontSize: 20, color: '#333'}}>Profile Screen</Text>
   </View>
 );
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import {colors} from '../globalStyles';
 
 export default function Header() {
   return (
@@ -22,6 +23,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingVertical: 20,
+    backgroundColor: colors.blue,
+    paddingHorizontal: 16,
   },
   welcomeText: {
     fontSize: 14,
@@ -40,5 +43,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#FCD34D',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  title: {
+    color: colors.white,
+    fontSize: 28,
+    fontWeight: 'bold',
   },
 });
