@@ -1,5 +1,6 @@
 import educationalContent from '../data/educational_content.json';
+import user_content from '../data/user_content.json';
 
-const dummyData = educationalContent;
+export const dummyData = educationalContent;
 
-export default dummyData;
+export const dummyUserData = user_content;

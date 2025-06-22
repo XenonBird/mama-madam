@@ -3,6 +3,8 @@
     {
       "id": "english",
       "name": "English",
+      "color": "#667EEA",
+      "emoji": "📚",
       "chapters": [
         {
           "id": "english-chapter-0",
@@ -5523,6 +5525,8 @@
     {
       "id": "math",
       "name": "Math",
+      "color": "#48BB78",
+      "emoji": "🔢",
       "chapters": [
         {
           "id": "math-chapter-0",
@@ -11043,6 +11047,8 @@
     {
       "id": "science",
       "name": "Science",
+      "color": "#ED8936",
+      "emoji": "🔬",
       "chapters": [
         {
           "id": "science-chapter-0",

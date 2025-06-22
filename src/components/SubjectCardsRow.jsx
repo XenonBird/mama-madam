@@ -1,11 +1,12 @@
 // SubjectCardsRow.jsx
-import React from 'react';
+import React, {useState} from 'react';
 import {
   View,
   StyleSheet,
   Text,
   TouchableOpacity,
   ScrollView,
+  Alert,
 } from 'react-native';
 import {colors} from '../globalStyles';
 
@@ -33,7 +34,7 @@ export const SubjectCard = ({
       disabled={isLocked}
       activeOpacity={0.8}>
       {/* Progress indicator */}
-      {progress > 0 && (
+      {!isLocked && progress > 0 && (
         <View style={styles.progressContainer}>
           <View style={styles.progressBar}>
             <View style={[styles.progressFill, {width: `${progress}%`}]} />
@@ -58,17 +59,22 @@ export const SubjectCard = ({
       </Text>
 
       {/* Progress text */}
-      {progress > 0 && (
+      {!isLocked && progress > 0 && (
         <Text style={styles.progressText}>{progress}% Complete</Text>
       )}
     </TouchableOpacity>
   );
 };
 
-export default function SubjectCardsRow() {
-  const handleSubjectPress = subject => {
-    console.log(`${subject} pressed`);
-    // Navigation logic here
+export default function SubjectCardsRow({
+  subjects,
+  currentSubjectId,
+  selectSubjectId,
+}) {
+  const handleSubjectPress = sid => {
+    console.log(`${sid} pressed`);
+    Alert.alert('Subject Selected', 'This is ' + sid);
+    selectSubjectId(sid);
   };
 
   return (
@@ -78,41 +84,57 @@ export default function SubjectCardsRow() {
         contentContainerStyle={styles.cardsContainer}
         horizontal={true}
         showsHorizontalScrollIndicator={false}>
-        <SubjectCard
-          title="Bengali"
-          subtitle="Language"
-          backgroundColor="#667EEA"
-          progress={75}
-          onPress={() => handleSubjectPress('Bengali')}
-        />
-        <SubjectCard
-          title="English"
-          subtitle="Literature"
-          backgroundColor="#48BB78"
-          progress={60}
-          onPress={() => handleSubjectPress('English')}
-        />
-        <SubjectCard
-          title="English"
-          subtitle="Literature"
-          backgroundColor="#48BB78"
-          progress={60}
-          onPress={() => handleSubjectPress('English')}
-        />
-        <SubjectCard
-          title="Math"
-          subtitle="Numbers"
-          backgroundColor="#ED8936"
-          progress={45}
-          onPress={() => handleSubjectPress('Math')}
-        />
-        <SubjectCard
-          title="Science"
-          subtitle="Discovery"
-          backgroundColor="#9F7AEA"
-          isLocked={true}
-          onPress={() => handleSubjectPress('Science')}
-        />
+        {subjects.map(subject => (
+          <SubjectCard
+            key={subject.id}
+            title={subject.name}
+            backgroundColor={subject.color}
+            progress={75}
+            onPress={() => handleSubjectPress(subject.id)}
+          />
+        ))}
+
+        <>
+          <SubjectCard
+            title="Bengali"
+            subtitle="Language"
+            backgroundColor="#667EEA"
+            progress={75}
+            isLocked={true}
+            onPress={() => {}}
+          />
+          <SubjectCard
+            title="English"
+            subtitle="Literature"
+            backgroundColor="#48BB78"
+            progress={60}
+            isLocked={true}
+            onPress={() => {}}
+          />
+          <SubjectCard
+            title="English"
+            subtitle="Literature"
+            backgroundColor="#48BB78"
+            progress={60}
+            isLocked={true}
+            onPress={() => {}}
+          />
+          <SubjectCard
+            title="Math"
+            subtitle="Numbers"
+            backgroundColor="#ED8936"
+            progress={45}
+            isLocked={true}
+            onPress={() => {}}
+          />
+          <SubjectCard
+            title="Science"
+            subtitle="Discovery"
+            backgroundColor="#9F7AEA"
+            isLocked={true}
+            onPress={() => {}}
+          />
+        </>
       </ScrollView>
     </View>
   );

@@ -4,23 +4,23 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import {colors} from '../globalStyles';
 
 // Levels Grid Component
-export const LevelsGrid = ({navigation}) => {
+export const LevelsGrid = ({navigation, lessons}) => {
   const levels = [
-    {level: 1, isCompleted: true, hasStars: true, starsCount: 2},
-    {level: 1, isCompleted: true, hasStars: true, starsCount: 2},
-    {level: 1, isCompleted: true, hasStars: true, starsCount: 2},
-    {level: 1, isCompleted: true, hasStars: true, starsCount: 2},
-    {level: 1, isCompleted: true, hasStars: true, starsCount: 2},
-    {level: 1, isCompleted: true, hasStars: true, starsCount: 2},
-    {level: 1, isCompleted: true, hasStars: true, starsCount: 2},
-    {level: 1, isCompleted: true, hasStars: true, starsCount: 2},
-    {level: 1, isCompleted: true, hasStars: true, starsCount: 2},
-    {level: 1, isCompleted: true, hasStars: false, starsCount: 0},
-    {level: 1, isCompleted: false, hasStars: false, starsCount: 0},
-    {level: 1, isCompleted: false, hasStars: false, starsCount: 0},
-    {level: 1, isCompleted: true, hasStars: false, starsCount: 0},
-    {level: 1, isCompleted: false, hasStars: false, starsCount: 0},
-    {level: 1, isCompleted: false, hasStars: false, starsCount: 0},
+    {isCompleted: true, starsCount: 2},
+    {isCompleted: true, starsCount: 1},
+    {isCompleted: true, starsCount: 0},
+    {isCompleted: true, starsCount: 2},
+    {isCompleted: true, starsCount: 2},
+    {isCompleted: true, starsCount: 2},
+    {isCompleted: true, starsCount: 2},
+    {isCompleted: true, starsCount: 2},
+    {isCompleted: true, starsCount: 2},
+    {isCompleted: true, starsCount: 0},
+    {isCompleted: false, starsCount: 0},
+    {isCompleted: false, starsCount: 0},
+    {isCompleted: false, starsCount: 0},
+    {isCompleted: false, starsCount: 0},
+    {isCompleted: false, starsCount: 0},
   ];
 
   return (
@@ -30,7 +30,6 @@ export const LevelsGrid = ({navigation}) => {
           key={index}
           level={index + 1}
           isCompleted={item.isCompleted}
-          hasStars={item.hasStars}
           starsCount={item.starsCount}
           navigation={navigation}
         />
@@ -39,13 +38,7 @@ export const LevelsGrid = ({navigation}) => {
   );
 };
 
-export const LevelItem = ({
-  level,
-  isCompleted,
-  hasStars,
-  starsCount,
-  navigation,
-}) => {
+export const LevelItem = ({level, isCompleted, starsCount, navigation}) => {
   return (
     <Pressable
       style={styles.levelItem}
@@ -54,13 +47,9 @@ export const LevelItem = ({
         {[1, 2, 3].map(star => (
           <FontAwesome
             key={star}
-            name={hasStars && star <= starsCount ? 'star' : 'star-o'}
+            name={star <= starsCount ? 'star' : 'star-o'}
             size={20}
-            color={
-              hasStars && star <= starsCount
-                ? colors.yellowDark
-                : colors.grayMedium
-            }
+            color={star <= starsCount ? colors.yellowDark : colors.grayMedium}
             style={styles.starIcon}
           />
         ))}

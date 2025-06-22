@@ -12,7 +12,7 @@ import {
   QuizQuestion,
 } from '../components/QuizComponents';
 
-import dummyData from '../data/dummyData';
+import {dummyData} from '../data/dummyData';
 
 const QuizScreen = ({navigation}) => {
   const [questions, setQuestions] = useState(

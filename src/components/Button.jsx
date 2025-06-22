@@ -5,7 +5,7 @@ import Toast from 'react-native-toast-message';
 
 const Button = ({
   title,
-  onPress,
+  onPress = () => {},
   disabled = false,
   variant = 'primary', // 'primary', 'secondary', 'correct', 'incorrect'
   size = 'large', // 'small', 'medium', 'large'

@@ -1,0 +1,580 @@
+{
+  "subjects": [
+    {
+      "id": "english",
+      "chapters": [
+        {
+          "id": "english-chapter-0",
+          "rewardXP": 30,
+          "isLocked": false,
+          "progress": {
+            "completedLessons": 0,
+            "totalQuestionsAnswered": 0,
+            "starsEarned": 0
+          },
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "title": "Lesson 1",
+              "isCompleted":true,
+              "starsCount":3
+            },
+            {
+              "id": "lesson-2",
+              "title": "Lesson 2",
+              "isCompleted":true,
+              "starsCount":2
+  
+            },
+            {
+              "id": "lesson-3",
+              "title": "Lesson 3",
+              "isCompleted":false,
+              "starsCount":0
+
+            }
+          ]
+        },        {
+          "id": "english-chapter-1",
+          "rewardXP": 30,
+          "isLocked": false,
+          "progress": {
+            "completedLessons": 0,
+            "totalQuestionsAnswered": 0,
+            "starsEarned": 0
+          },
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "title": "Lesson 1",
+              "isCompleted":true,
+              "starsCount":3
+            },
+            {
+              "id": "lesson-2",
+              "title": "Lesson 2",
+              "isCompleted":true,
+              "starsCount":2
+  
+            },
+            {
+              "id": "lesson-3",
+              "title": "Lesson 3",
+              "isCompleted":false,
+              "starsCount":0
+
+            }
+          ]
+        },        {
+          "id": "english-chapter-1a",
+          "rewardXP": 30,
+          "isLocked": false,
+          "progress": {
+            "completedLessons": 0,
+            "totalQuestionsAnswered": 0,
+            "starsEarned": 0
+          },
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "title": "Lesson 1",
+              "isCompleted":true,
+              "starsCount":3
+            },
+            {
+              "id": "lesson-2",
+              "title": "Lesson 2",
+              "isCompleted":true,
+              "starsCount":2
+  
+            },
+            {
+              "id": "lesson-3",
+              "title": "Lesson 3",
+              "isCompleted":false,
+              "starsCount":0
+
+            }
+          ]
+        },        {
+          "id": "english-chapter-2",
+          "rewardXP": 30,
+          "isLocked": false,
+          "progress": {
+            "completedLessons": 0,
+            "totalQuestionsAnswered": 0,
+            "starsEarned": 0
+          },
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "title": "Lesson 1",
+              "isCompleted":true,
+              "starsCount":3
+            },
+            {
+              "id": "lesson-2",
+              "title": "Lesson 2",
+              "isCompleted":true,
+              "starsCount":2
+  
+            },
+            {
+              "id": "lesson-3",
+              "title": "Lesson 3",
+              "isCompleted":false,
+              "starsCount":0
+
+            }
+          ]
+        },        {
+          "id": "english-chapter-3",
+          "rewardXP": 30,
+          "isLocked": false,
+          "progress": {
+            "completedLessons": 0,
+            "totalQuestionsAnswered": 0,
+            "starsEarned": 0
+          },
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "title": "Lesson 1",
+              "isCompleted":true,
+              "starsCount":3
+            },
+            {
+              "id": "lesson-2",
+              "title": "Lesson 2",
+              "isCompleted":true,
+              "starsCount":2
+  
+            },
+            {
+              "id": "lesson-3",
+              "title": "Lesson 3",
+              "isCompleted":false,
+              "starsCount":0
+
+            }
+          ]
+        },        {
+          "id": "english-chapter-4",
+          "rewardXP": 30,
+          "isLocked": false,
+          "progress": {
+            "completedLessons": 0,
+            "totalQuestionsAnswered": 0,
+            "starsEarned": 0
+          },
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "title": "Lesson 1",
+              "isCompleted":true,
+              "starsCount":3
+            },
+            {
+              "id": "lesson-2",
+              "title": "Lesson 2",
+              "isCompleted":true,
+              "starsCount":2
+  
+            },
+            {
+              "id": "lesson-3",
+              "title": "Lesson 3",
+              "isCompleted":false,
+              "starsCount":0
+
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math",
+      "chapters": [
+        {
+          "id": "math-chapter-0",
+          "rewardXP": 30,
+          "isLocked": false,
+          "progress": {
+            "completedLessons": 0,
+            "totalQuestionsAnswered": 0,
+            "starsEarned": 0
+          },
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "title": "Lesson 1",
+              "isCompleted":true,
+              "starsCount":3
+            },
+            {
+              "id": "lesson-2",
+              "title": "Lesson 2",
+              "isCompleted":true,
+              "starsCount":2
+  
+            },
+            {
+              "id": "lesson-3",
+              "title": "Lesson 3",
+              "isCompleted":false,
+              "starsCount":0
+
+            }
+          ]
+        },        {
+          "id": "math-chapter-1",
+          "rewardXP": 30,
+          "isLocked": false,
+          "progress": {
+            "completedLessons": 0,
+            "totalQuestionsAnswered": 0,
+            "starsEarned": 0
+          },
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "title": "Lesson 1",
+              "isCompleted":true,
+              "starsCount":3
+            },
+            {
+              "id": "lesson-2",
+              "title": "Lesson 2",
+              "isCompleted":true,
+              "starsCount":2
+  
+            },
+            {
+              "id": "lesson-3",
+              "title": "Lesson 3",
+              "isCompleted":false,
+              "starsCount":0
+
+            }
+          ]
+        },        {
+          "id": "math-chapter-1a",
+          "rewardXP": 30,
+          "isLocked": false,
+          "progress": {
+            "completedLessons": 0,
+            "totalQuestionsAnswered": 0,
+            "starsEarned": 0
+          },
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "title": "Lesson 1",
+              "isCompleted":true,
+              "starsCount":3
+            },
+            {
+              "id": "lesson-2",
+              "title": "Lesson 2",
+              "isCompleted":true,
+              "starsCount":2
+  
+            },
+            {
+              "id": "lesson-3",
+              "title": "Lesson 3",
+              "isCompleted":false,
+              "starsCount":0
+
+            }
+          ]
+        },        {
+          "id": "math-chapter-2",
+          "rewardXP": 30,
+          "isLocked": false,
+          "progress": {
+            "completedLessons": 0,
+            "totalQuestionsAnswered": 0,
+            "starsEarned": 0
+          },
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "title": "Lesson 1",
+              "isCompleted":true,
+              "starsCount":3
+            },
+            {
+              "id": "lesson-2",
+              "title": "Lesson 2",
+              "isCompleted":true,
+              "starsCount":2
+  
+            },
+            {
+              "id": "lesson-3",
+              "title": "Lesson 3",
+              "isCompleted":false,
+              "starsCount":0
+
+            }
+          ]
+        },        {
+          "id": "math-chapter-3",
+          "rewardXP": 30,
+          "isLocked": false,
+          "progress": {
+            "completedLessons": 0,
+            "totalQuestionsAnswered": 0,
+            "starsEarned": 0
+          },
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "title": "Lesson 1",
+              "isCompleted":true,
+              "starsCount":3
+            },
+            {
+              "id": "lesson-2",
+              "title": "Lesson 2",
+              "isCompleted":true,
+              "starsCount":2
+  
+            },
+            {
+              "id": "lesson-3",
+              "title": "Lesson 3",
+              "isCompleted":false,
+              "starsCount":0
+
+            }
+          ]
+        },        {
+          "id": "math-chapter-4",
+          "rewardXP": 30,
+          "isLocked": false,
+          "progress": {
+            "completedLessons": 0,
+            "totalQuestionsAnswered": 0,
+            "starsEarned": 0
+          },
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "title": "Lesson 1",
+              "isCompleted":true,
+              "starsCount":3
+            },
+            {
+              "id": "lesson-2",
+              "title": "Lesson 2",
+              "isCompleted":true,
+              "starsCount":2
+  
+            },
+            {
+              "id": "lesson-3",
+              "title": "Lesson 3",
+              "isCompleted":false,
+              "starsCount":0
+
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "science",
+      "chapters": [
+        {
+          "id": "science-chapter-0",
+          "rewardXP": 30,
+          "isLocked": false,
+          "progress": {
+            "completedLessons": 0,
+            "totalQuestionsAnswered": 0,
+            "starsEarned": 0
+          },
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "title": "Lesson 1",
+              "isCompleted":true,
+              "starsCount":3
+            },
+            {
+              "id": "lesson-2",
+              "title": "Lesson 2",
+              "isCompleted":true,
+              "starsCount":2
+  
+            },
+            {
+              "id": "lesson-3",
+              "title": "Lesson 3",
+              "isCompleted":false,
+              "starsCount":0
+
+            }
+          ]
+        },        {
+          "id": "science-chapter-1",
+          "rewardXP": 30,
+          "isLocked": false,
+          "progress": {
+            "completedLessons": 0,
+            "totalQuestionsAnswered": 0,
+            "starsEarned": 0
+          },
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "title": "Lesson 1",
+              "isCompleted":true,
+              "starsCount":3
+            },
+            {
+              "id": "lesson-2",
+              "title": "Lesson 2",
+              "isCompleted":true,
+              "starsCount":2
+  
+            },
+            {
+              "id": "lesson-3",
+              "title": "Lesson 3",
+              "isCompleted":false,
+              "starsCount":0
+
+            }
+          ]
+        },        {
+          "id": "science-chapter-1a",
+          "rewardXP": 30,
+          "isLocked": false,
+          "progress": {
+            "completedLessons": 0,
+            "totalQuestionsAnswered": 0,
+            "starsEarned": 0
+          },
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "title": "Lesson 1",
+              "isCompleted":true,
+              "starsCount":3
+            },
+            {
+              "id": "lesson-2",
+              "title": "Lesson 2",
+              "isCompleted":true,
+              "starsCount":2
+  
+            },
+            {
+              "id": "lesson-3",
+              "title": "Lesson 3",
+              "isCompleted":false,
+              "starsCount":0
+
+            }
+          ]
+        },        {
+          "id": "science-chapter-2",
+          "rewardXP": 30,
+          "isLocked": false,
+          "progress": {
+            "completedLessons": 0,
+            "totalQuestionsAnswered": 0,
+            "starsEarned": 0
+          },
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "title": "Lesson 1",
+              "isCompleted":true,
+              "starsCount":3
+            },
+            {
+              "id": "lesson-2",
+              "title": "Lesson 2",
+              "isCompleted":true,
+              "starsCount":2
+  
+            },
+            {
+              "id": "lesson-3",
+              "title": "Lesson 3",
+              "isCompleted":false,
+              "starsCount":0
+
+            }
+          ]
+        },        {
+          "id": "science-chapter-3",
+          "rewardXP": 30,
+          "isLocked": false,
+          "progress": {
+            "completedLessons": 0,
+            "totalQuestionsAnswered": 0,
+            "starsEarned": 0
+          },
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "title": "Lesson 1",
+              "isCompleted":true,
+              "starsCount":3
+            },
+            {
+              "id": "lesson-2",
+              "title": "Lesson 2",
+              "isCompleted":true,
+              "starsCount":2
+  
+            },
+            {
+              "id": "lesson-3",
+              "title": "Lesson 3",
+              "isCompleted":false,
+              "starsCount":0
+
+            }
+          ]
+        },        {
+          "id": "science-chapter-4",
+          "rewardXP": 30,
+          "isLocked": false,
+          "progress": {
+            "completedLessons": 0,
+            "totalQuestionsAnswered": 0,
+            "starsEarned": 0
+          },
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "title": "Lesson 1",
+              "isCompleted":true,
+              "starsCount":3
+            },
+            {
+              "id": "lesson-2",
+              "title": "Lesson 2",
+              "isCompleted":true,
+              "starsCount":2
+  
+            },
+            {
+              "id": "lesson-3",
+              "title": "Lesson 3",
+              "isCompleted":false,
+              "starsCount":0
+
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
