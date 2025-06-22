@@ -1,11 +1,11 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {View, Text} from 'react-native';
 import {colors} from '../globalStyles';
-import Icon from 'react-native-vector-icons/FontAwesome5';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import HomeScreen from '../screens/HomeScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 
-const ExploreScreen = () => (
+const DemoScreen = ({title}) => (
   <View
     style={{
       flex: 1,
@@ -13,7 +13,7 @@ const ExploreScreen = () => (
       alignItems: 'center',
       backgroundColor: '#f2f2f2',
     }}>
-    <Text style={{fontSize: 20, color: '#333'}}>Explore Screen</Text>
+    <Text style={{fontSize: 20, color: '#333'}}>{title}</Text>
   </View>
 );
 
@@ -35,55 +35,88 @@ const MainScreenTabs = () => {
         },
         animation: 'shift',
         tabBarShowLabel: true,
-        tabBarActiveTintColor: colors.black,
-        tabBarInactiveTintColor: colors.black,
+        tabBarActiveTintColor: colors.purpleDark,
       }}>
       <Tab.Screen
         name="Home"
         component={HomeScreen}
         options={{
-          tabBarIcon: ({color}) => (
+          tabBarIcon: ({color, focused}) => (
             <Icon
-              name="th"
+              name={focused ? 'home-variant' : 'home-variant-outline'}
               style={{
                 width: 24,
                 height: 24,
                 fontSize: 24,
-                tintColor: colors.primaryDark,
+                color: focused ? colors.purpleDark : colors.grayDark,
               }}
             />
           ),
         }}
       />
-      <Tab.Screen
-        name="Explore"
-        component={ExploreScreen}
+      {/* <Tab.Screen
+        name="Syllabus"
+        component={() => <DemoScreen title={'Syllabus Screen'} />}
         options={{
-          tabBarIcon: ({color}) => (
+          tabBarIcon: ({color, focused}) => (
             <Icon
-              name="lightbulb"
+              name={focused ? 'school' : 'school-outline'}
               style={{
                 width: 24,
                 height: 24,
                 fontSize: 24,
-                tintColor: colors.primaryDark,
+                color: focused ? colors.purpleDark : colors.grayDark,
+              }}
+            />
+          ),
+        }}
+      /> */}
+      <Tab.Screen
+        name="Stats"
+        component={() => <DemoScreen title={'Explore Screen'} />}
+        options={{
+          tabBarIcon: ({color, focused}) => (
+            <Icon
+              name={focused ? 'view-dashboard' : 'view-dashboard-outline'}
+              style={{
+                width: 24,
+                height: 24,
+                fontSize: 24,
+                color: focused ? colors.purpleDark : colors.grayDark,
               }}
             />
           ),
         }}
       />
+      {/* <Tab.Screen
+        name="MySchool"
+        component={() => <DemoScreen title={'Ny School Screen'} />}
+        options={{
+          tabBarIcon: ({color, focused}) => (
+            <Icon
+              name={focused ? 'bank' : 'bank-outline'}
+              style={{
+                width: 24,
+                height: 24,
+                fontSize: 24,
+                color: focused ? colors.purpleDark : colors.grayDark,
+              }}
+            />
+          ),
+        }}
+      /> */}
       <Tab.Screen
         name="Profile"
         component={ProfileScreen}
         options={{
-          tabBarIcon: ({color}) => (
+          tabBarIcon: ({color, focused}) => (
             <Icon
-              name="user"
+              name={focused ? 'baby-face' : 'baby-face-outline'}
               style={{
                 width: 24,
                 height: 24,
                 fontSize: 24,
-                tintColor: colors.primaryDark,
+                color: focused ? colors.purpleDark : colors.grayDark,
               }}
             />
           ),
