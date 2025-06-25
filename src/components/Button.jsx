@@ -3,6 +3,8 @@ import {Text, StyleSheet, Pressable, View} from 'react-native';
 import {colors} from '../globalStyles';
 import Toast from 'react-native-toast-message';
 
+// Sound.setCategory('Playback');
+
 const Button = ({
   title,
   onPress = () => {},
@@ -187,29 +189,3 @@ const styles = StyleSheet.create({
 });
 
 export default Button;
-
-// examples
-
-// eslint-disable-next-line no-lone-blocks
-{
-  /* <Button
-        onPress={() => console.log('Pressed!')}
-        backgroundColor={colors.yellow}
-        shadowColor={colors.yellowDark}
-        style={{marginTop: 16, paddingHorizontal: 32}}>
-        <View style={{flexDirection: 'row', alignItems: 'center'}}>
-          <Image
-            source={require('../asset/images/fox-hi.png')}
-            style={{width: 24, height: 24, marginRight: 8}}
-          />
-          <Text
-            style={{
-              color: colors.black,
-              fontWeight: 'bold',
-              fontSize: 24,
-            }}>
-            Let's Start
-          </Text>
-        </View>
-      </Button> */
-}

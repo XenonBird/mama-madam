@@ -5,15 +5,16 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import HomeScreen from '../screens/HomeScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 
-const DemoScreen = ({title}) => (
+const StatsScreen = () => (
   <View
+    // eslint-disable-next-line react-native/no-inline-styles
     style={{
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
       backgroundColor: '#f2f2f2',
     }}>
-    <Text style={{fontSize: 20, color: '#333'}}>{title}</Text>
+    <Text style={{fontSize: 20, color: '#333'}}>StatsScreen</Text>
   </View>
 );
 
@@ -73,7 +74,7 @@ const MainScreenTabs = () => {
       /> */}
       <Tab.Screen
         name="Stats"
-        component={() => <DemoScreen title={'Explore Screen'} />}
+        component={StatsScreen}
         options={{
           tabBarIcon: ({color, focused}) => (
             <Icon
