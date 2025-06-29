@@ -10,7 +10,6 @@ export const OptionButton = ({
   isCorrect = false,
   onPress,
   showAsGrid = false,
-
   type,
 }) => {
   const isWrong = isSelected && !isCorrect;

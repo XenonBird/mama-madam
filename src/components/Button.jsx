@@ -2,9 +2,7 @@ import React, {useState} from 'react';
 import {Text, StyleSheet, Pressable, View} from 'react-native';
 import {colors} from '../globalStyles';
 import Toast from 'react-native-toast-message';
-import SoundPlayer from 'react-native-sound-player';
-
-// Sound.setCategory('Playback');
+import {playSound} from './Sound';
 
 const Button = ({
   title,
@@ -14,19 +12,15 @@ const Button = ({
   size = 'large', // 'small', 'medium', 'large'
   style,
   textStyle,
-  backgroundColor, // optional custom background color
-  shadowColor, // optional custom shadow color
-  noShadow = false, // if true, no shadow will be applied
-  children, // support for custom children
+  backgroundColor,
+  shadowColor,
+  noShadow = false,
+  children,
 }) => {
   const [isPressed, setIsPressed] = useState(false);
 
   const handleClick = () => {
-    try {
-      SoundPlayer.playSoundFile('click', 'wav');
-    } catch (e) {
-      console.log('Cannot play sound file', e);
-    }
+    playSound('click', 'wav', 0.1);
   };
 
   const handlePress = () => {

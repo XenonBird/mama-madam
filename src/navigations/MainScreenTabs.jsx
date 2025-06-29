@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import HomeScreen from '../screens/HomeScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 
-const StatsScreen = () => (
+const ProgressScreen = () => (
   <View
     // eslint-disable-next-line react-native/no-inline-styles
     style={{
@@ -14,7 +14,33 @@ const StatsScreen = () => (
       alignItems: 'center',
       backgroundColor: '#f2f2f2',
     }}>
-    <Text style={{fontSize: 20, color: '#333'}}>StatsScreen</Text>
+    <Text style={{fontSize: 20, color: '#333'}}>ProgressScreen</Text>
+  </View>
+);
+
+const MySchool = () => (
+  <View
+    // eslint-disable-next-line react-native/no-inline-styles
+    style={{
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: '#f2f2f2',
+    }}>
+    <Text style={{fontSize: 20, color: '#333'}}>MySchool</Text>
+  </View>
+);
+
+const Collections = () => (
+  <View
+    // eslint-disable-next-line react-native/no-inline-styles
+    style={{
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: '#f2f2f2',
+    }}>
+    <Text style={{fontSize: 20, color: '#333'}}>Collections</Text>
   </View>
 );
 
@@ -56,12 +82,12 @@ const MainScreenTabs = () => {
         }}
       />
       {/* <Tab.Screen
-        name="Syllabus"
-        component={() => <DemoScreen title={'Syllabus Screen'} />}
+        name="Collections"
+        component={Collections}
         options={{
           tabBarIcon: ({color, focused}) => (
             <Icon
-              name={focused ? 'school' : 'school-outline'}
+              name={focused ? 'dots-grid' : 'dots-grid'}
               style={{
                 width: 24,
                 height: 24,
@@ -72,13 +98,13 @@ const MainScreenTabs = () => {
           ),
         }}
       /> */}
-      <Tab.Screen
-        name="Stats"
-        component={StatsScreen}
+      {/* <Tab.Screen
+        name="Progress"
+        component={ProgressScreen}
         options={{
           tabBarIcon: ({color, focused}) => (
             <Icon
-              name={focused ? 'view-dashboard' : 'view-dashboard-outline'}
+              name={focused ? 'chart-box' : 'chart-box-outline'}
               style={{
                 width: 24,
                 height: 24,
@@ -88,10 +114,10 @@ const MainScreenTabs = () => {
             />
           ),
         }}
-      />
+      /> */}
       {/* <Tab.Screen
         name="MySchool"
-        component={() => <DemoScreen title={'Ny School Screen'} />}
+        component={MySchool}
         options={{
           tabBarIcon: ({color, focused}) => (
             <Icon
